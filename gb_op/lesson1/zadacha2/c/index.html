@@ -1,32 +1,32 @@
 <meta charset="utf-8">
 <script>
-    var a = prompt("Зимой белый летом серый"); 
-	var b = 0; // Количество верных ответов
-		if (a =="Заяц" || a=="заяц" || a =="ЗАЯЦ")
+    var userAnswer = prompt("Зимой белый летом серый");
+	var winCaunt = 0; // Количество верных ответов
+		if (userAnswer.toLowerCase() =="заяц")
 	{
-	 b++
+	 winCaunt++
 	  alert("Поздравлям, все правильно!");
 	}
 	else
     {
        alert("Ответ неверен.");
     }
-    var a = prompt("Зимой и летом одним цветом"); 
-	
-		if (a =="Елка" || a=="елка" || a =="ЕЛКА"|| a =="Ёлка"|| a =="ёлка"|| a =="ЁЛКА")
+    var userAnswer = prompt("Зимой и летом одним цветом");
+
+		if (userAnswer.toLowerCase() =="елка" || userAnswer.toLowerCase() =="ёлка")
 	{
-	  b++
+	  winCaunt++
 	  alert("Поздравлям, все правильно!");
 	}
 	else
     {
        alert("Ответ неверен.");
     }
-var a = prompt("Без окон, без дверей, полна горница людей"); 
-	
-		if (a =="Арбуз" || a=="арбуз" || a =="АРБУЗ")
+var userAnswer = prompt("Без окон, без дверей, полна горница людей");
+
+		if (userAnswer.toLowerCase() =="арбуз")
 	{
-	  b++
+	  winCaunt++
 	  alert("Поздравлям, все правильно!");
 	}
 	else
@@ -34,6 +34,6 @@ var a = prompt("Без окон, без дверей, полна горница 
        alert("Ответ неверен.");
     }
 
-       alert("Количество правильных ответов: " + b);
-       alert("Игра окончена.");
+       alert("Количество правильных ответов: " + winCaunt+"\nИгра окончена.");
+
 </script>
