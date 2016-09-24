@@ -1,16 +1,21 @@
 <meta charset="utf-8">
 <script>
-   do {
-  var number = +prompt("Введите положительное число");
 
-} while (number < 0);
+var answer = parseInt(Math.random() * 100);
 
-
-/*var i = 0;
-var sum = 0;
-while (i <= 3) {
-  sum = sum + i;
-  i++;
+for (var i = 5; i > 0; i--) {
+var number = +prompt("Какое число загадал компьютер?\n У вас " + i + " попыток");
+if (number == answer) {
+  alert("Вы угадали!");
+  break;
+} else if (number < answer) {
+  alert("Слишком маленькое число");
 }
-alert("Сумма чисел " + sum);*/
+else if (number > answer) {
+ alert("Слишком большое число");
+}
+}
+
+alert(answer);
+
 </script>
