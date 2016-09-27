@@ -2,31 +2,34 @@
 <script>
 
 var answer = parseInt(Math.random() * 100);
+var playerNumber = 1;
+while (true) {
+  var userAnswer = prompt("Какое число загадал компьютер?( от 0 до 100) Ходит игрок " + playerNumber + "\n Для выхода нажмите q");
+  if (userAnswer == "q"){
+    break;
+  }
+  userAnswer = +userAnswer;
+  if (userAnswer == answer) {
+    alert("Вы угадали! Победил 1-ый игрок");
+    break;
+  } else if (userAnswer < answer) {
+    alert("Слишком маленькое число");
+  }
+  else if (userAnswer > answer) {
+   alert("Слишком большое число");
+  }
 
-for (var i = 5; i > 0; i--) {
-var user1number = +prompt("Отвечает 1-ый игрок.\nКакое число загадал компьютер?\n У вас " + i + " попыток");
+  if (playerNumber == 1) {
 
-if (user1number == answer) {
-  alert("Вы угадали! Победил 1-ый игрок");
-  break;
-} else if (user1number < answer) {
-  alert("Слишком маленькое число");
-}
-else if (user1number > answer) {
- alert("Слишком большое число");
-}
-var user2number = +prompt("Отвечает 2-ый игрок.\nКакое число загадал компьютер?\n У вас " + i + " попыток");
-if (user2number == answer) {
-  alert("Вы угадали! Победил 2-ый игрок");
-  break;
-} else if (user2number < answer) {
-  alert("Слишком маленькое число");
-}
-else if (user2number > answer) {
- alert("Слишком большое число");
-}
+    playerNumber = 2;
+  } else {
+    playerNumber = 1;
+  }
+
 
 }
+
+
 
 alert(answer);
 
