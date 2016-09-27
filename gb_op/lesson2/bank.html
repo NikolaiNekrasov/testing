@@ -6,18 +6,21 @@
   </head>
   <body>
     <script>
-    var contribution = +prompt("Введите сумму вклада ");
-    var percentСontribution = +prompt("Введите процент вклада ");
-    var i = 1
-    while (i <= 5) {
+    do {
+    var deposit = +prompt("Введите сумму вклада \nСумма не должна быть отрицательной! ");
+  } while (deposit <=0);
+    do {
+    var percent = +prompt("Введите процент вклада ");
+  } while (percent < 0);
+ for (var year = 1; year <= 5; year++) {
+
+   deposit = deposit+ deposit / 100 * percent;
+   document.write("Сумма за " + year + "-й год " + deposit.toFixed(2) + "<br>")
+ }
 
 
-      contribution = contribution + contribution * (percentСontribution/100);
 
-      alert("Сумма вклада после " + i +"-го года "+ contribution.toFixed(2)+"\n" );
-      i++
 
-    }
     </script>
   </body>
 </html>
