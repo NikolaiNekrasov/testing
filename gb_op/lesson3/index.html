@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+function askQuestion(question, answer) {
+    var userAnswer = prompt(question);
+    if (userAnswer == answer) {
+      alert("Угадали!");
+    } else {
+      alert("Не угадали!");
+    }
+
+  }
+
+  askQuestion("Зимой и летом одним цветом", "елка");
+  askQuestion("Сто одежек и все без застежек", "капуста");
+
+
+
+
+/*function requrs(value) {
+    if (value == 1) {
+      return 1;
+
+      }
+
+      var b = requrs(value - 1)*value;
+      return b;
+    }
+var result = requrs(4);
+alert(result);*/
+</script>

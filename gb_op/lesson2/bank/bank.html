@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Размер вклада</title>
+  </head>
+  <body>
+    <script>
+    var contribution = +prompt("Введите сумму вклада ");
+    var percentСontribution = +prompt("Введите процент вклада ");
+    var i = 1
+    while (i <= 5) {
+
+
+      contribution = contribution + contribution * (percentСontribution/100);
+
+      alert("Сумма вклада после " + i +"-го года "+ contribution.toFixed(2)+"\n" );
+      i++
+
+    }
+    </script>
+  </body>
+</html>
