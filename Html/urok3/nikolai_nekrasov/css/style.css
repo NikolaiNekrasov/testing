@@ -57,20 +57,20 @@ h2 {
     background-color: #eaeaea;
     
 }
-.description--short {
+.description__short {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.description--detailed {
+.description__detailed {
     color: #484343;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     text-align: left;
 }
-.description--img {
+.description__img {
     border: 1px solid #707070;
 }
 .characteristics {
