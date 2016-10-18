@@ -35,25 +35,20 @@ a:visited{
 li {
     list-style-type: none; /* Убираем маркеры */
 }
-.menu a{
+.menu li a{
     color: #8B00FF;
     font-size: 20px;
     font-family: "Times New Roman", serif, Verdana;
     text-decoration: none;
              
 }
-.menu a:hover{
+.menu li a:hover{
     color: #8B0000;
     text-decoration: underline;
-    
-             
-}
-.menu a:visited{
-    color: #8B00FF;
+    }
+.menu li a:visited{
     text-decoration: underline;
-    
-             
-}
+    }
 
 
 .desc h2 {
@@ -63,21 +58,55 @@ li {
     background-color: #eaeaea;
     
 }
-.desc__short {
+
+.desc__short p{
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.desc__detailed {
+.desc__detailed p{
     color: #484343;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     text-align: left;
 }
-.desc__img {
-    border: 1px solid #707070;
+.desc__short:first-letter, .desc__detailed:first-letter{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%; 
+    color: red;
+}
+
+
+.desc__img img{
+    background: transparent; 
+    border: 2px solid #ECE9E0;
+    border-radius: 10px; 
+    display: inline-block;
+   }
+.desc__img img:hover{
+     border: 2px solid transparent;
+    
+}
+.desc__table{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #ECE9E0;
+    color: #656665;
+    border: 16px solid #ECE9E0;
+    border-radius: 20px;
+       
+}
+.desc__table th{
+    font-size: 18px;
+    padding: 10px;
+}
+.desc__table td{
+    background: #F5D7BF;
+    padding: 10px;
 }
 .character {
     color: #48434f;
@@ -95,17 +124,25 @@ li {
     width: 170px;
     height: 25px;
     font-size: 18px;
+    }
+.contacts iput,textarea, [type]:not([type="email"]){
+    text-transform: capitalize;
 }
 .contacts input[name=subject]{
     width: 300px;
 }
 
+.contacts input:focus[name=email]{
+    color: darkblue;
+    outline-color: #f0ffff;
+    background-color: #f0ffff;
+    }
 
 .contacts textarea{
     width: 300px;
     height: 100px;
     font-size: 18px;
-}
+    }
 
 
 .browserupgrade {
