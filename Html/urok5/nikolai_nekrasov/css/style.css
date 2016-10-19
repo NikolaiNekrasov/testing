@@ -1,9 +1,37 @@
-body {
-   
-    background-color: #f8f8f8;
-   
+* {
+    margin: 0;
+    padding: 0;
 }
-hr {
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin: 0 0 0 10px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.content hr {
     display: block;
     height: 1px;
     border: 0;
@@ -11,85 +39,104 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-.header{
-    
-}
-.footer {
-    
-}
-a:link{
+
+a:link {
     color: blue;
 }
-a:hover{
-    color: #8B00ff;    
+
+a:hover {
+    color: #8B00ff;
 }
-a:active{
-    text-decoration: none;   
+
+a:active {
+    text-decoration: none;
 }
-a:focus{
-     text-decoration: none;   
+
+a:focus {
+    text-decoration: none;
 }
-a:visited{
-    color: #8B0000;    
+
+a:visited {
+    color: #8B0000;
 }
+
 li {
-    list-style-type: none; /* Убираем маркеры */
+    list-style-type: none;
+    /* Убираем маркеры */
 }
-.menu li a{
+
+.menu li a {
     color: #8B00FF;
     font-size: 20px;
     font-family: "Times New Roman", serif, Verdana;
     text-decoration: none;
-             
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: #8B0000;
     text-decoration: underline;
-    }
-.menu li a:visited{
+}
+
+.menu li a:visited {
     text-decoration: underline;
-    }
+}
 
-
+.desc {
+    
+}
 .desc h2 {
     color: #000;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
-    
 }
 
-.desc__short p{
+.desc__short p {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.desc__detailed p{
+
+.desc__detailed p {
     color: #484343;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     text-align: left;
 }
-.desc__short:first-letter, .desc__detailed:first-letter{
+
+.desc__short > p:first-letter,
+.desc__detailed > p:first-letter {
     font-family: "Times New Roman", Times, serif;
-    font-size: 150%; 
+    font-size: 150%;
     color: red;
 }
 
-
-.desc__img img{
-    background: transparent; 
-    border: 2px solid #ECE9E0;
-    border-radius: 10px; 
+.desc__img{
+    /*border: 1px solid black; */
     display: inline-block;
-   }
-.desc__img img:hover{
-     border: 2px solid transparent;
+   
+}
+.desc__img img {
+    background: transparent;
+    border: 2px solid #ECE9E0;
+    border-radius: 10px;
     
 }
-.desc__table{
+
+.desc__img img:hover {
+    border: 2px solid transparent;
+}
+
+.desc__short {
+    /*border: 1px solid black; */
+   display: inline-block;
+   max-width: 388px;
+    min-height: 388px;
+    
+   }
+.desc__character table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     text-align: center;
     border-collapse: separate;
@@ -98,17 +145,19 @@ li {
     color: #656665;
     border: 16px solid #ECE9E0;
     border-radius: 20px;
-       
 }
-.desc__table th{
+
+.desc__character th {
     font-size: 18px;
     padding: 10px;
 }
-.desc__table td{
+
+.desc__character td {
     background: #F5D7BF;
     padding: 10px;
 }
-.character {
+
+.desc__character {
     color: #48434f;
     font-weight: 500;
     line-height: 30px;
@@ -116,38 +165,47 @@ li {
 }
 
 .contacts {
-   border-color: #ece4e4;
+    border-color: #ece4e4;
     color: #484343;
     font-size: 18px;
 }
-.contacts input{
+
+.contacts input {
     width: 170px;
     height: 25px;
     font-size: 18px;
-    }
-.contacts iput,textarea, [type]:not([type="email"]){
+}
+
+.contacts iput,
+textarea,
+[type]:not([type="email"]) {
     text-transform: capitalize;
 }
-.contacts input[name=subject]{
+
+.contacts input[name=subject] {
     width: 300px;
 }
 
-.contacts input:focus[name=email]{
+.contacts input:focus[name=email] {
     color: darkblue;
     outline-color: #f0ffff;
     background-color: #f0ffff;
-    }
+}
 
-.contacts textarea{
+.contacts textarea {
     width: 300px;
     height: 100px;
     font-size: 18px;
-    }
-
+}
 
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+.footer{
+    height: 20px;
+    background-color: azure;
+    text-align: right;
 }
