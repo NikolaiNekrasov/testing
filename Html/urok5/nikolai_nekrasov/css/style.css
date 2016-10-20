@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background-color: #f8f8f8;
@@ -15,7 +11,7 @@ body {
 .header {
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .header__logo {
@@ -80,6 +76,10 @@ li {
 .menu li a:visited {
     text-decoration: underline;
 }
+.catalog {
+    display: flex;
+    justify-content: space-between;
+}
 
 .desc {
     
@@ -89,6 +89,7 @@ li {
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
+    
 }
 
 .desc__short p {
@@ -115,7 +116,7 @@ li {
 
 .desc__img{
     /*border: 1px solid black; */
-    display: inline-block;
+    float: left;
    
 }
 .desc__img img {
@@ -131,9 +132,11 @@ li {
 
 .desc__short {
     /*border: 1px solid black; */
-   display: inline-block;
-   max-width: 388px;
-    min-height: 388px;
+   float: left;
+   max-width: 368px;
+    padding: 0  10px;
+   
+   
     
    }
 .desc__character table {
@@ -158,10 +161,42 @@ li {
 }
 
 .desc__character {
+    clear:both;
     color: #48434f;
     font-weight: 500;
     line-height: 30px;
     list-style-image: url(../images/list_style_20.png);
+}
+
+
+.desc__button_buy {
+    padding: 0  10px;
+    overflow: hidden;
+}
+
+
+.desc__button_buy button { 
+    border: 0;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+    }
+.desc__button_buy button:hover{
+     background: rgb(53, 167, 110);
+}
+.desc__button_buy button:focus{
+     outline-color: #f0ffff;
+    
+}
+
+.desc__button_buy button:active{
+    background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
 }
 
 .contacts {
