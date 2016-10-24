@@ -1,6 +1,7 @@
 
 body {
     background-color: #f8f8f8;
+    margin: 0;
 }
 
 .container {
@@ -10,17 +11,18 @@ body {
 
 .header {
     height: 100px;
-    display: flex;
-    justify-content: space-between; 
+   
 }
 
 .header__logo {
     margin: 0 0 0 10px;
+    float: left;
 }
 
 .menu {
     margin: 0;
     padding: 0;
+    float: right;
 }
 
 .menu li {
